@@ -8,6 +8,6 @@ services:
   srv_reader:
     build: 
       context: ./
-      dockerfile: ./srv_persistor/Dockerfile
+      dockerfile: ./srv_reader/Dockerfile
     depends_on:
       - srv_persistor

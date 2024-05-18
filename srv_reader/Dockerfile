@@ -1,6 +1,7 @@
 FROM python:3.12-slim
 
 COPY ./srv_reader /home/app
+COPY ./data/100_sr.json /tmp/data/
 
 WORKDIR /home/app
 
