@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message EmptyMessage {}
+
+message PingSalesRecordResponse {
+    string ack = 1;
+}
+
+service SalesRecord {
+    rpc PingSalesRecord(EmptyMessage) returns(PingSalesRecordResponse);
+}
